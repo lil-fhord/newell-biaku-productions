@@ -1,0 +1,50 @@
+:root{
+  --green:#062d22;
+  --green2:#0b4937;
+  --gold:#f7c51d;
+  --cream:#f7f4eb;
+  --ink:#10231e;
+  --white:#fff;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--cream);color:var(--ink);line-height:1.6}
+a{text-decoration:none;color:inherit}
+.site-header{height:78px;background:#031d17;color:white;display:flex;align-items:center;justify-content:space-between;padding:0 6%;position:sticky;top:0;z-index:10;box-shadow:0 2px 18px #0003}
+.brand,.footer-brand{display:flex;align-items:center;gap:12px}
+.brand strong,.footer-brand strong{display:block;letter-spacing:2px;font-size:14px}
+.brand small,.footer-brand small{display:block;color:var(--gold);letter-spacing:3px;font-size:10px}
+.brand-mark{width:45px;height:45px;border:2px solid var(--gold);border-radius:10px;display:grid;place-items:center;color:var(--gold);font-weight:900;font-size:18px}
+nav{display:flex;align-items:center;gap:28px;font-size:14px}
+.nav-cta{background:var(--gold);color:#14251f;padding:10px 18px;border-radius:999px;font-weight:800}
+.hero{min-height:600px;background:linear-gradient(120deg,var(--green),#09271f);color:white;display:grid;grid-template-columns:1.2fr .8fr;align-items:center;gap:50px;padding:80px 8%}
+.eyebrow{letter-spacing:3px;font-weight:800;font-size:12px;color:var(--gold);margin:0 0 14px}
+h1{font-size:clamp(48px,7vw,88px);line-height:.98;margin:0 0 25px;letter-spacing:-3px}
+h1 span{color:var(--gold)}
+.lead{font-size:20px;max-width:600px;color:#e5eee9}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px}
+.button{display:inline-block;padding:14px 22px;border-radius:999px;font-weight:800}
+.primary{background:var(--gold);color:#10251e}
+.secondary{border:1px solid #ffffff66;color:white}
+.hero-brand-card{background:#ffffff0d;border:1px solid #ffffff22;border-radius:28px;padding:55px;text-align:center;backdrop-filter:blur(6px)}
+.big-mark{font-size:90px;line-height:1;color:var(--gold);font-weight:900}
+.hero-brand-card h2{margin:10px 0 0;letter-spacing:4px}.hero-brand-card p{color:var(--gold);letter-spacing:5px;margin:0}.hero-brand-card span{font-size:12px;color:#c9d7d1}
+.featured{padding:85px 7%}.section-heading{text-align:center;max-width:750px;margin:auto}.section-heading h2{font-size:clamp(35px,5vw,58px);line-height:1.05;margin:0 0 12px}.section-heading>p:last-child{font-size:19px}
+.product{max-width:1200px;margin:50px auto 0;display:grid;grid-template-columns:1.15fr .85fr;gap:50px;align-items:center}
+.product-images{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.product-images img{width:100%;border-radius:18px;box-shadow:0 18px 40px #062d2230}
+.product-info{background:white;border-radius:24px;padding:35px;box-shadow:0 12px 35px #062d2214}
+.pill{background:#e7f0eb;color:var(--green2);font-size:11px;font-weight:900;padding:7px 12px;border-radius:99px}
+.product-info h3{font-size:35px;line-height:1.1;margin:20px 0 15px}
+.product-info ul{padding-left:20px}.product-info li{margin:9px 0}.wide{width:100%;text-align:center;margin-top:12px}.small{font-size:13px;color:#66736e}
+.benefits{background:var(--green);color:white;display:grid;grid-template-columns:repeat(4,1fr);padding:45px 7%;gap:25px}.benefits div{display:flex;gap:14px;align-items:center}.benefits b{color:var(--gold);font-size:25px}
+.about{padding:85px 8%;display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}.about h2{font-size:48px;line-height:1.05;margin:0}.about>p{font-size:20px}
+footer{background:#031d17;color:white;padding:35px 7%;display:flex;justify-content:space-between;align-items:center;gap:20px}.footer-brand{gap:12px}footer p{font-size:12px;color:#bdcbc5}
+@media(max-width:800px){
+ .site-header{padding:0 5%}.site-header nav a:not(.nav-cta){display:none}
+ .hero{grid-template-columns:1fr;padding:60px 7%}.hero-brand-card{padding:35px}
+ .product{grid-template-columns:1fr}.product-images{grid-template-columns:1fr 1fr}
+ .benefits{grid-template-columns:1fr 1fr}.about{grid-template-columns:1fr;gap:25px}
+ footer{flex-direction:column;align-items:flex-start}
+}
+@media(max-width:480px){.product-images{grid-template-columns:1fr}.benefits{grid-template-columns:1fr}h1{font-size:52px}}
